@@ -1,56 +1,340 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-bar {
+  text-align: center;
+  width: 100%;
+  padding: 23px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 1px 1px 1px 2px #f1f1f1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  width: 100%;
+  height: 600px;
+  background-image: url(webphoto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.text-content {
+  margin-top: 10rem;
+  margin-left: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  text-align: left;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-left: 6%;
+}
+
+.input-wrapper input {
+  border: 1px solid #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.input-wrapper button {
+  border: transparent;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #008081;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+.input-wrapper input:focus {
+  outline: transparent;
+}
+
+.fa-squarespace {
+  color: #040720;
+  margin: 5px;
+  float: left;
+  size: 20px;
+}
+
+.logo p {
+  float: left;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.menu li {
+  color: #040720;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu li a {
+  font-size: 18px;
+  padding: 0px 10px;
+  color: #040720;
+  text-decoration: none;
+  align-content: center;
+  float: center;
+}
+
+.coming {
+  float: right;
+  display: flex;
+  font-size: 18px;
+  color: #040720;
+}
+
+/* ---- logos ---- */
+
+.menu-bar2 {
+  background: #008081;
+  text-align: center;
+  width: 100%;
+  padding: 90px;
+}
+
+.header {
+  font-size: 18px;
+  color: white;
+}
+
+.logo-one {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+}
+
+
+.menu li a:hover {
+  border-bottom: 2px solid #008081;
+}
+
+.display-on-mobile {
+  display: none;
+}
+
+.logo li:hover {
+  background-color: black;
+}
+
+/* ---- second page---- */
+
+.paragraph {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 80px;
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+.row {
+  padding: 0px 50px;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.pictures:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pictures {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pictures img {
+  width: 100%;
+  height: 350px;
+}
+
+.content-one {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-container {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  /* transform: translate(-50%, -50%); */
+  transition: 0.5s;
+  font-size: 18px;
+  color: white;
+}
+
+.pictures img:hover {
+}
+
+/* --- third page--- */
+
+.third-page {
+  width: 100%;
+  background-color: #f0f8ff;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+
+  /* margin-top: -4.5rem; */
+}
+
+.head-line {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 4rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.head-line h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.head-line h3 {
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.left-side {
+  background-color: transparent;
+  width: fit-content;
+  border: 15px;
+  margin: 20px;
+}
+
+.left-side2 {
+  background-color: transparent;
+  width: fit-content;
+  border: 15px;
+  margin: 20px;
+}
+
+.image2 {
+  margin: 20px;
+  padding: 50px 50px;
+}
+
+.right-side {
+  background-color: transparent;
+  width: fit-content;
+  border: 15px;
+  margin-top: 3rem;
+  float: right;
+}
+
+.right-side2 {
+  background-color: transparent;
+  width: fit-content;
+  border: 15px;
+  margin-top: 3rem;
+
+  /* margin: 20px; */
+  float: right;
+  margin-bottom: 100px;
+}
+
+.feature-flex {
+  display: flex;
+  align-items: center;
+}
+
+.third-page-image {
+  width: 300px;
+  height: 400px;
+}
+
+.exciting {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+  .display-on-mobile {
+    display: block;
   }
-  
-  .menu-bar {
-    text-align: center;
-    width: 100%;
-    padding: 23px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 1px 1px 1px 2px #f1f1f1;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+
+  .nav-link {
+    display: none;
   }
-  
-  .content {
-    position: relative;
-    z-index: 1;
-    margin-top: 80px;
-    width: 100%;
-    height: 600px;
-    background-image: url(webphoto.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
+  .coming-soon {
+    display: none;
+  }
+
+  .menu-bar2 {
+  }
+
+  .row {
     flex-direction: column;
-    color: white;
   }
-  
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .feature-flex {
+    flex-direction: column;
+  }
+
+  .content {
+    background-position: contain;
+    height: 650px;
+    /* margin-bottom: 3rem; */
+  }
+
   .text-content {
-    margin-top: 10rem;
-    margin-left: 5rem;
-    font-family: "Open Sans", sans-serif;
-    font-size: 48px;
-    text-align: left;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
-  
-  .input-wrapper {
-    position: relative;
-    margin-right: 52%;
-  }
-  
+
   .input-wrapper input {
     border: 1px solid #f1f1f1;
     padding: 10px 15px;
     border-radius: 8px;
+    display: block;
   }
   .input-wrapper button {
     border: transparent;
@@ -60,223 +344,14 @@
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
+    display: block;
   }
-  
-  .input-wrapper input:focus {
-    outline: transparent;
-  }
-  
-  .fa-squarespace {
-    color: #040720;
-    margin: 5px;
-    float: left;
-    size: 20px;
-  }
-  
-  .logo p {
-    float: left;
-    font-size: 20px;
-    font-family: sans-serif;
-  }
-  
-  /* /* .menu-bar p{
-      font-size: 20px;   
-      font-family: serif;
-      font-weight: bold;
-      float: left;
-      display: ;
-  } */
-  
-  .menu li {
-    color: #040720;
-    list-style: none;
-    display: inline-block;
-  }
-  
-  .menu li a {
-    font-size: 18px;
-    padding: 0px 10px;
-    color: #040720;
-    text-decoration: none;
-    align-content: center;
-    float: center;
-  }
-  
-  .coming {
-    float: right;
+
+  .input-wrapper {
     display: flex;
-    font-size: 18px;
-    color: #040720;
-  }
-  
-  /* ---- logos ---- */
-  
-  .menu-bar2 {
-    background: #008081;
-    text-align: center;
-    width: 100%;
-    padding: 90px;
-  }
-  
-  .header {
-    font-size: 18px;
-    color: white;
-  }
-  
-  .logo li {
-    list-style: none;
-    display: inline-block;
-    background-color: transparent;
-    transition: 5s;
-  }
-  
-  .logo li a {
-    color: white;
-    margin: 40px;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .logo li:hover {
-    background-color: black;
-  }
-  
-  /* ---- second page---- */
-  
-  .paragraph {
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    position: relative;
+    gap: 0.5rem;
   }
-  
-  h3 {
-    font-size: 20px;
-    text-align: center;
-    font-family: sans-serif;
-    margin-top: 80px;
-  }
-  h1 {
-    text-align: center;
-    font-family: sans-serif;
-  }
-  .content {
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .row {
-    padding: 0px 50px;
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .pictures {
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-  }
-  
-  .pictures img {
-    width: 100%;
-    height: 350px;
-  }
-  
-  .content-one {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  .text-container {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    /* transform: translate(-50%, -50%); */
-    transition: 0.5s;
-    font-size: 18px;
-    color: white;
-  }
-  
-  .pictures img:hover {
-  }
-  
-  /* --- third page--- */
-  
-  .third-page {
-    width: 100%;
-    background-color: #f0f8ff;
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
-  
-    /* margin-top: -4.5rem; */
-  }
-  
-  .head-line {
-    font-size: 18px;
-    text-align: center;
-    padding-top: 1rem;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  .head-line h2 {
-    margin-bottom: 5px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  .head-line h3 {
-    font-weight: bold;
-    font-size: 19px;
-    margin-bottom: 5px;
-  }
-  
-  .left-side {
-    background-color: transparent;
-    width: 60rem;
-    border: 15px;
-    margin: 50px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  
-  .left-side2 {
-    background-color: transparent;
-    width: fit-content;
-    border: 15px;
-    margin: 20px;
-  }
-  
-  .image2 {
-    margin: 20px;
-    padding: 50px 50px;
-  }
-  
-  .right-side {
-    background-color: transparent;
-    width: fit-content;
-    border: 15px;
-    margin-top: 20px;
-    float: right;
-  }
-  
-  .right-side2 {
-    background-color: transparent;
-    width: fit-content;
-    border: 15px;
-    margin-top: 3rem;
-  
-    /* margin: 20px; */
-    float: right;
-    margin-bottom: 100px;
-  }
-  
-  .feature-flex {
-    display: flex;
-    align-items: center;
-  }
-  
-  .third-page-image {
-    width: 300px;
-    height: 400px;
-  }
+}
