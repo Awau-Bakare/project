@@ -73,9 +73,9 @@
   size: 20px;
 }
 
-.logo p {
+.logo-one p {
   float: left;
-  font-size: 20px;
+  font-size: 25px;
   font-family: sans-serif;
 }
 
@@ -253,6 +253,7 @@ h1 {
 .image2 {
   margin: 20px;
   padding: 50px 50px;
+  border-radius: 10px;
 }
 
 .right-side {
